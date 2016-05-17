@@ -1,0 +1,316 @@
+/* @CHARSET "UTF-8";
+
+.hidden{
+	display:none;
+}
+
+.button{
+	display:inline-block;
+	border:none;
+	border-left:1px solid #8CBA34;
+	text-indent:-9999px;
+	vertical-align:middle;
+}
+
+----------------main-menu style---------------
+#main-menu{
+	border:1px solid red;
+	display:inline-block;
+}
+
+#main-menu>ul{
+	border:1px solid red;
+	overflow:auto
+}
+
+#main-menu>ul>li:first-child{
+	float:left;
+	padding-left:24px;
+	background:url("../js/images/bg-main-menu-vsp.png") no-repeat 13px center;
+}
+
+#main-menu>ul>li>a{
+	font-family:"¸¼Àº°íµñ","Gothic","µ¸¿ò",sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	text-decoration:none;
+}
+#main-menu>ul>li>a:hover{
+	color:#ff6a00;
+}
+
+.main-menu-item{
+	padding-left:24px;
+	padding-right:24px;
+	background:url("../js/images/bg-main-menu-vsp.png") no-repeat 13px center;
+}
+
+.member-menu{
+	font-family:"¸¼Àº°íµñ";
+	font-size:10px;
+	font-weight:bold;
+	color:inherit;
+}
+
+.member-maenu li:first-child{
+	background:none;
+}
+
+.member-maenu li{
+	float:left;
+	padding-left:12px;
+	background:url("../js/images/bg-joinus-menu-vsp.png")no-repeat 6px center;
+}
+
+
+-----------lecture-search style-------------
+#lecture-search{
+	width:308px;
+	height:25px;
+	border:5px #8cba34 solid;
+	brackground:#fff;
+	display:inline-block;
+}
+
+#lecture-search form{
+	border:1px solid red;
+}
+
+#lecture-search fieldset label{
+	float:left;
+	display:inline-block;
+	background:red;
+	font-size:11px;
+	width:80px;
+	height:25px;
+	line-height:25px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+#lecture-search fieldset input[type="text"]{
+	background:#ff6a00;
+	width:100px;
+	height:25px;
+	font-size:16px;
+	border:1px #000 solid;
+	vertical-align:middle;
+}
+
+#lecture-search fieldset input[type="submit"]{
+	background:blue;
+	border:0;
+	border-left:1px solid #8cba34;
+	width:31px;
+	height:25px;
+	text-indent:-9999px;
+	background:url("../js/images/btn-zoom.png") no-repeat top center;
+	vertical-align:middle;
+}
+
+
+-----------#customer-menu a:first-child---------------
+
+
+#customer-menu{
+	border:1px #ff0000 solid;
+	display:inline-block;
+}
+
+#customer-menu li{
+	border:1px #ff0000 solid;
+}
+
+#customer-menu li:first-child a{
+	background:url("../js/images/txt-mypage.png") no-repeat center;
+	width:71px;
+	height:17px;
+}
+
+#customer-menu li:last-child a{
+	background:url("../js/images/txt-customer.png") no-repeat center;
+	width:71px;
+	height:17px;
+} */
+
+
+@CHARSET "UTF-8";
+
+.hidden {
+	display: none;
+	/* visibility: hidden; */
+}
+
+.button {
+	display: inline-block; 
+	border : none;
+	border-left: 1px solid #8CBA34;
+	text-indent: -999px;
+	vertical-align: middle;
+	border: none;
+	overflow:hidden;
+}
+
+/*-----------main menu------------*/
+#main-menu {
+	/* 	font-size: 1.5em; */
+	display: inline-block;
+}
+
+#main-menu>ul {
+	/* border: 1px solid red; */
+	overflow: auto;
+	/* display: inline-block; */
+}
+
+#main-menu>ul>li:FIRST-CHILD {
+	padding-left: 0px;
+	background: none;
+}
+
+#main-menu>ul>li {
+	float: left;
+	padding-left: 24px;
+	background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+}
+
+#main-menu>ul>li>a {
+	color: #000;
+	font-family: "¸¼Àº °íµñ", "°íµñ", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#main-menu>ul>li>a:hover {
+	color: #ff6a00;
+}
+
+/*--------member-menu------------*/
+#member-menu {
+	/* border: 1px solid red; */
+	overflow: auto;
+}
+
+#member-menu>ul>li:FIRST-CHILD {
+	padding-left: 0px;
+	background: none;
+}
+
+#member-menu>ul>li {
+	float: left;
+	padding-left: 9px;
+	background: url("../images/bg-joinus-menu-vsp.png") no-repeat 5px center;
+}
+
+#member-menu>ul>li>a {
+	color: #979797;
+	font-family: "¸¼Àº °íµñ", "°íµñ", sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/*----------lecture-search-----------*/
+#lecture-search {
+	width: 308px;
+	height: 25px;
+	border: 5px solid #8CBA34;
+	display: inline-block;
+}
+/* 
+#lecture-search  form{
+	border: 1px solid red;
+}
+ */
+#lecture-search fieldset {
+	font-size: 0px;
+}
+
+#lecture-search fieldset label {
+	/* background:red;	 */
+	font-size: 11px;
+	font-weight: bold;
+	width: 55px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#lecture-search fieldset input[type="text"] {
+	/* background:green; */
+	font-size: 16px;
+	width: calc(100% - 55px - 31px);;
+	border: none;
+	height: 25px;
+	vertical-align: middle;
+	text-indent: 5px;
+}
+
+#lecture-search fieldset input[type="submit"] {
+	/* background:blue; */
+	background: url("../images/btn-zoom.png") no-repeat center;
+	width: 31px;
+	height: 25px;
+	/*.button »ó¼Ó*/
+	/* border:none;
+			border-left:1px solid #8CBA34;
+			text-indent:-999px;
+			background:url("../images/btn-zoom.png") no-repeat center;
+			vertical-align: middle; */
+}
+
+/*-------------------#customer-menu style--------------------------------*/
+#customer-menu{
+/* 	border:1px solid red; */
+	display : inline-block;
+}
+/* 
+#customer-menu ul{
+	border:1px solid red;
+	display:inline-block;
+}
+ */
+#customer-menu li{
+	/* border:1px solid red; */
+	/* display:inline-block; */
+	float:left;
+}
+
+#customer-menu li:FIRST-CHILD  a {
+	background: url("../images/txt-mypage.png") no-repeat center;
+	width: 72px;
+	height: 17px;
+	
+}
+
+#customer-menu li:last-child  a{		/*nth-child(2), first-child  +  li a*/
+	background: url("../images/txt-customer.png") no-repeat center;
+	width: 72px;
+	height: 17px;
+}
+
+
+
+
+/*---------aside-menu-------------*/
+
+#aside-menu li{
+	background:url("../js/images/bg-aside-menu-hsp.png")repeat-x bottom ;
+	height:26px;
+}
+
+.aside-menu ul li a{
+	font-famliy:"¸¼Àº°íµñ";
+	font-size:11px;
+	font-weight:bold;
+	color:#808080;
+	padding-left:26px;
+	text-decoration: none;
+}
+
+.aside-menu ul li a:hover{
+	background:url("../js/images/icon-current.png")no-repeat left center;
+}
